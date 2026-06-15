@@ -8,6 +8,11 @@ web e boas práticas de documentação de testes.
 - Automatizar cenários críticos utilizando Selenium WebDriver e JUnit 5
 - Demonstrar a aplicação do padrão Page Object
 
+### Aplicação testada
+A aplicação de Controle de Produtos é uma interface simples desenvolvida em HTML, CSS e JavaScript.
+Tem como referência o curso online de Selenium disponível na plataforma Udemy.
+Link de acesso: https://www.udemy.com/course/testes-automatizados-curso-completo-com-selenium-e-java/?couponCode=PMNVD2025
+
 ### Tecnologias Utilizadas
 - Java 21
 - Maven (Gerenciamento de Dependências)
