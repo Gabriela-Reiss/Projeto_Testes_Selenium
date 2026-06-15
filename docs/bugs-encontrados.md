@@ -44,8 +44,59 @@ Apenas clicando duas vezes no botão "Criar" há a abertura do modal
 Abertura do modal ao clicar no botão uma vez
 
 ### Status
--
+- Precisa ser corrigido
 
 -------
+
+## BUG-003
+
+### Titulo
+Bug encontrado no teste "CT-016 Deve excluir um produto da tabela ao clicar no link "Excluir""
+
+### Severidade
+Gravíssima
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar uma vez no botão "Criar" para abertura do modal
+4. Preencher os dados, e clicar em "Salvar"
+5. Escolher o produto cadastrado e clicar em "Excluir"
+
+### Resultado Atual
+Ao clicar em "Excluir", o produto não é removido da tabela
+
+### Resultado Esperado
+Exclusão do produto cadastrado ao clicar em "Excluir"
+
+### Status
+- Precisa ser corrigido
+
+-------
+
+## BUG-005
+
+### Titulo
+Bug encontrado no teste "CT-017 Deve permitir edição de dados um produto da tabela ao clicar no link "Editar""
+
+### Severidade
+Gravíssima
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar uma vez no botão "Criar" para abertura do modal
+4. Preencher os dados, e clicar em "Salvar"
+5. Escolher o produto cadastrado e clicar em "Editar"
+
+### Resultado Atual
+Ao clicar em "Editar" não aparece a opção de editar algum dado do produto cadastrado
+
+### Resultado Esperado
+Ao clicar em "Editar" abrir um modal que permita edição de dados do produto cadastrado
+
+### Status
+- Precisa ser corrigido
+
 
 

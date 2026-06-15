@@ -351,29 +351,57 @@ Cadastrar produto e adicionar na tabela da página de controle de produtos
 
 ----------
 
-## CT-016 Deve cadastrar apenas valores numéricos nos campos de quantidade, código e valor do produto
+## CT-016 Deve excluir um produto da tabela ao clicar no link "Excluir"
 
 ### Objetivo
-Validar cadastro de um produto com todos os campos preenchidos
+Validar se um produto é excluído ao clicar no botão "Excluir"
 
 ### Pré-condições
 Usuário cadastrado e logado com sucesso 
 
 ### Dados de Teste
-Código: 12356
-Nome: "Mel de Abelha"
-Quantidade: 8
-Valor: 50
-Data Cadastro: "12/06/2026"
+Sem
 
 ### Passos
 1. Logar-se no sistema
 2. Acessar página de cadastro de produtos
 3. Clicar no botão "Criar"
 4. Dentro do modal, preencher todos os campos clicar no botão "Salvar"
+5. Escolher um dos produtos cadastrados na tabela, e clicar em "Excluir"
 
 ### Resultado Esperado
-Cadastrar produto e adicionar na tabela da página de controle de produtos
+Excluir registro de produto cadastrado
+
+
+----------
+
+## CT-017 Deve permitir edição de dados um produto da tabela ao clicar no link "Editar"
+
+### Objetivo
+Validar se permite edição de dados de um produto cadastrado ao clicar em "Editar"
+
+### Pré-condições
+Usuário cadastrado e logado com sucesso 
+
+### Dados de Teste
+Código: 12
+Nome: "Mel de Abelha"
+Quantidade: 8
+Valor: 50
+Data Cadastro: "12/06/2026"
+
+(alteração do valor do código do produto)
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar no botão "Criar"
+4. Dentro do modal, preencher todos os campos clicar no botão "Salvar"
+5. Escolher um dos produtos cadastrados na tabela, e clicar em "Editar"
+6. Alterar o valor do código e clicar novamente em "Salvar"
+
+### Resultado Esperado
+Editar valor de código do produto cadastrado
 
 
 

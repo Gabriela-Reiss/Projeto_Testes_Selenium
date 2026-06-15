@@ -53,6 +53,15 @@ public class ControleDeProdutosPO extends BasePO{
     @FindBy(css= "tbody tr td:first-child")
     public WebElement elementoCadastrado;
 
+    @FindBy(css= "tbody tr td:first-child")
+    public WebElement elementoEditado;
+
+    @FindBy(css = "button.btn.btn-link:nth-of-type(2)")
+    public WebElement btnExcluir;
+
+    @FindBy(css = "button.btn.btn-link:nth-of-type(1)")
+    public WebElement btnEditar;
+
     public void clicarBotao(WebElement btn){
         btn.click();
     }
