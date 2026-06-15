@@ -206,6 +206,176 @@ Voltar para página de Login
 
 -----------
 
+## CT-010 Deve abrir o modal para cadastro de produtos ao clicar no botão "Criar"
+
+### Objetivo
+Validar se ao clicar no botão "Criar" é aberto um modal para o cadastro de produtos 
+
+### Pré-condições
+Usuário cadastrado e logado com sucesso 
+
+### Dados de Teste
+Sem dados
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar no botão "Criar"
+
+### Resultado Esperado
+Abrir um modal formulário com campos para preenchimento, visando o cadastro de produtos 
+
+---------
+
+## CT-011 Deve fechar o modal de cadastrado de produtos ao clicar no botão "X"
+
+
+### Objetivo
+Validar se ao clicar no botão "X" o modal de cadastro é fechado
+
+### Pré-condições
+Usuário cadastrado e logado com sucesso 
+
+### Dados de Teste
+Sem dados
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar no botão "Criar"
+4. Dentro do modal, clicar no "X"
+
+### Resultado Esperado
+Fechar o modal de cadastro de produto
+
+-----------
+
+## CT-012 Deve fechar o modal de cadastrado de produtos ao clicar no botão "Sair"
+
+### Objetivo
+Validar se ao clicar no botão "Sair" o modal de cadastro é fechado
+
+### Pré-condições
+Usuário cadastrado e logado com sucesso 
+
+### Dados de Teste
+Sem dados
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar no botão "Criar"
+4. Dentro do modal, clicar no botão "Sair"
+
+### Resultado Esperado
+Fechar o modal de cadastro de produto
+
+----------
+
+## CT-013 Tentar cadastrar um produto com os campos em branco
+
+### Objetivo
+Validar se é possível cadastrar um produto com os campos de preenchimento em branco
+
+### Pré-condições
+Usuário cadastrado e logado com sucesso 
+
+### Dados de Teste
+Código: -
+Nome: -
+Quantidade: -
+Valor: -
+Data Cadastro: -
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar no botão "Criar"
+4. Dentro do modal, não preencher os dados e clicar em "Salvar"
+
+### Resultado Esperado
+Apresentar mensagem de erro: "Todos os campos são obrigatórios para o cadastro!"
+
+
+----------
+
+## CT-014 Tentar cadastrar um produto com um dos campos em branco
+
+### Objetivo
+Validar se é possível cadastrar um produto com um dos campos em branco
+
+### Pré-condições
+Usuário cadastrado e logado com sucesso 
+
+### Dados de Teste
+Código: 12356
+Nome: "Mel de Abelha"
+Quantidade: 8
+Valor: 50
+Data Cadastro: -
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar no botão "Criar"
+4. Dentro do modal, preencher os campos, exceto data de cadastro e clicar no botão "Salvar"
+
+### Resultado Esperado
+Apresentar mensagem de erro: "Todos os campos são obrigatórios para o cadastro!"
+
+----------
+
+## CT-015 Deve cadastrar um produto com todos os campos preenchidos
+
+### Objetivo
+Validar cadastro de um produto com todos os campos preenchidos
+
+### Pré-condições
+Usuário cadastrado e logado com sucesso 
+
+### Dados de Teste
+Código: 12356
+Nome: "Mel de Abelha"
+Quantidade: 8
+Valor: 50
+Data Cadastro: "12/06/2026"
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar no botão "Criar"
+4. Dentro do modal, preencher todos os campos clicar no botão "Salvar"
+
+### Resultado Esperado
+Cadastrar produto e adicionar na tabela da página de controle de produtos
+
+----------
+
+## CT-016 Deve cadastrar apenas valores numéricos nos campos de quantidade, código e valor do produto
+
+### Objetivo
+Validar cadastro de um produto com todos os campos preenchidos
+
+### Pré-condições
+Usuário cadastrado e logado com sucesso 
+
+### Dados de Teste
+Código: 12356
+Nome: "Mel de Abelha"
+Quantidade: 8
+Valor: 50
+Data Cadastro: "12/06/2026"
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar no botão "Criar"
+4. Dentro do modal, preencher todos os campos clicar no botão "Salvar"
+
+### Resultado Esperado
+Cadastrar produto e adicionar na tabela da página de controle de produtos
+
+
 
 
 

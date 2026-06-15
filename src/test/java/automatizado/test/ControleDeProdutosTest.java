@@ -40,6 +40,90 @@ public class ControleDeProdutosTest extends BateTest{
     }
 
 
+    //teste falha, sendo necessário pedir que clique duas vezes no botão de criar para que abra o modal
+    @Test
+    public void CT_010deveAbrirModalDeCadastroAoClicarEmCriar(){
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+        assertEquals("Produto", controleDeProdutosPO.tituloModal.getText());
+    }
+
+    @Test
+    public void CT_011deveFecharModalDeCadastroAoClicarEmX(){
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnX);
+        String elementoPaginaProduto = driver.getTitle();
+
+        assertEquals("Controle de Produtos", elementoPaginaProduto);
+    }
+
+    @Test
+    public void CT_012deveFecharModalDeCadastroAoClicarEmSair(){
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnSair);
+        String elementoPaginaProduto = driver.getTitle();
+
+        assertEquals("Controle de Produtos", elementoPaginaProduto);
+    }
+
+    @Test
+    public void CT_013naoDevePermitirCadastroDeProdutoComCamposEmBranco(){
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+
+        controleDeProdutosPO.preencherDados("", "", "", "", "");
+        String messageError = controleDeProdutosPO.obterMensagemErro();
+
+        assertEquals("Todos os campos são obrigatórios para o cadastro!", messageError);
+    }
+
+    @Test
+    public void CT_014naoDevePermitirCadastroDeProdutoComUmDosCampoEmBranco(){
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+
+        controleDeProdutosPO.preencherDados("12356", "Mel de Abelha", "8", "50", "");
+        String messageError = controleDeProdutosPO.obterMensagemErro();
+
+        assertEquals("Todos os campos são obrigatórios para o cadastro!", messageError);
+    }
+
+    @Test
+    public void CT_015deveCadastrarProdutoComTodosOsCamposPreenchidos(){
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnCriar);
+
+        controleDeProdutosPO.preencherDados("12356", "Mel de Abelha", "8", "50", "12/06/2026");
+     
+        controleDeProdutosPO.clicarBotao(controleDeProdutosPO.btnSair);
+
+        assertEquals("12356", controleDeProdutosPO.verificarCadastro());
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 }
