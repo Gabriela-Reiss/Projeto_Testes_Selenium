@@ -1,0 +1,211 @@
+# Casos de Testes - Login
+
+## CT-001 Realizar login com email e senha válidos
+
+### Objetivo
+Validar acesso ao sistema com o preenchimento dos campos de email e senha
+válidos
+
+### Pré-condições
+Usuário cadastrado na aplicação
+
+### Dados de Teste
+Email: admin@admin.com
+Senha: admin@123
+
+### Passos
+
+### Resultado Esperado
+Encaminhar o usuário para página de Cadastro de Produtos
+
+-----------
+
+## CT-002 Tentar realizar login com os campos em branco
+
+### Objetivo
+Validar acesso ao sistema sem preencher os campos de email e senha
+
+### Pré-condições
+Sem pré-condições
+
+### Dados de Teste
+Email: -
+Senha: -
+
+### Passos
+1. Abrir a aplicação
+2. Informar email
+3. Informar senha
+4. Clicar em Entrar
+
+
+### Resultado Esperado
+Apresentar mensagem de erro: "Informe usuário e senha, os campos não podem ser brancos."
+
+---------
+
+## CT-003 Tentar realizar login com campo de senha em branco
+
+### Objetivo
+Validar acesso sem o preenchimento do campo senha
+
+### Pré-condições
+Sem pré-condições
+
+### Dados de Teste
+Email: admin@email.com
+Senha: - 
+
+### Passos
+1. Abrir a aplicação
+2. Informar senha
+4. Clicar em Entrar
+
+### Resultado Esperado
+Apresentar mensagem de erro: "Informe usuário e senha, os campos não podem ser brancos."
+
+--------
+
+## CT-004 Tentar realizar login com campo de email em branco
+
+### Objetivo
+Validar acesso sem o preenchimento do campo email
+
+
+### Pré-condições
+Sem pré-condições
+
+
+### Dados de Teste
+Email: - 
+Senha: admin123
+
+### Passos
+1. Abrir a aplicação
+2. Informar email
+3. Clicar em Entrar
+
+### Resultado Esperado
+Apresentar mensagem de erro: "Informe usuário e senha, os campos não podem ser brancos."
+
+---------
+
+## CT-005 Tentar realizar login com dados inválidos
+
+### Objetivo
+Validar acesso com preenchimento de dados inválidos (dados não cadastrados)
+
+### Pré-condições
+Sem pré-condições
+
+### Dados de Teste
+Email: admin@gmail.com
+Senha: 123456
+
+### Passos
+1. Abrir a aplicação
+2. Informar email inválido
+3. Informar senha inválido
+4. Clicar em Entrar
+
+### Resultado Esperado
+Apresentar mensagem de erro: "E-mail ou senha inválidos"
+
+---------
+
+## CT-006 Tentar realizar login com senha inválida
+
+### Objetivo
+Validar acesso com preenchimento de senha inválida
+
+### Pré-condições
+Usuário cadastrado
+
+### Dados de Teste
+Email: admin@admin.com
+Senha: admin123
+
+### Passos
+1. Abrir a aplicação
+2. Informar email válido
+3. Informar senha inválida
+4. Clicar em Entrar
+
+### Resultado Esperado
+Apresentar mensagem de erro: "E-mail ou senha inválidos"
+
+-----------
+
+## CT-007 Tentar realizar login com email inválido
+
+### Objetivo
+Validar acesso com preenchimento de email inválido
+
+### Pré-condições
+Usuário cadastrado
+
+### Dados de Teste
+Email: admin@email.com
+Senha: admin@123
+
+### Passos
+1. Abrir a aplicação
+2. Informar email inválido
+3. Informar senha válida
+4. Clicar em Entrar
+
+### Resultado Esperado
+Apresentar mensagem de erro: "E-mail ou senha inválidos"
+
+----------
+
+# Casos de Testes - Cadastro de Produtos
+
+
+## CT-008 Deve manter na mesma página de Controle de Produtos ao clicar na logo
+
+### Objetivo
+Validar se ao clicar na logo mantém na mesma página
+
+### Pré-condições
+Usuário cadastrado e logado com sucesso 
+
+### Dados de Teste
+Sem dados
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar na logo no canto superior esquerdo, indicada pelo nome da página: "Cadastro de Produtos"
+
+### Resultado Esperado
+Manter na página Controle de Produtos
+
+
+---------
+
+
+## CT-009 Deve voltar para tela de Login ao clicar na opção de Voltar 
+
+### Objetivo
+Validar se ao clicar no botão Voltar, volta para a página de Login (anterior)
+
+### Pré-condições
+Usuário cadastrado e logado com sucesso 
+
+### Dados de Teste
+Sem dados
+
+### Passos
+1. Logar-se no sistema
+2. Acessar página de cadastro de produtos
+3. Clicar no botão "Voltar" no cabeçalho da página
+
+### Resultado Esperado
+Voltar para página de Login
+
+-----------
+
+
+
+
